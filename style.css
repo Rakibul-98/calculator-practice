@@ -1,0 +1,35 @@
+.header{
+    text-align: center;
+}
+.main{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculatorForm{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    border: rgb(8, 8, 8) 2px solid;
+    box-shadow: rgb(161, 170, 161) 10px 10px 10px;
+}
+.calculatorForm div{
+    height: calc(450px/6);
+    width: 100%;
+    display: flex;
+}
+.calculatorForm div input{
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.operator{
+    background-color:orangered;
+}
+.number{
+    background-color: peru;
+}
