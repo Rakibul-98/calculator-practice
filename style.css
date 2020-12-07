@@ -1,35 +1,88 @@
-.header{
+.title{
     text-align: center;
 }
-.main{
-    position: relative;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.calculator-sec{
+    border: 5px solid rgb(15, 15, 15);
+    height: 100%;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
-.calculatorForm{
-    position: relative;
-    height: 450px;
-    width: 400px;
-    border: rgb(8, 8, 8) 2px solid;
-    box-shadow: rgb(161, 170, 161) 10px 10px 10px;
+.calculator-display{
+    width: 95%;
+    height: 100px;
+    margin: 10px auto;
 }
-.calculatorForm div{
-    height: calc(450px/6);
-    width: 100%;
-    display: flex;
-}
-.calculatorForm div input{
+.calculator-display input{
+    background-color: rgb(224, 230, 230);
     height: 100%;
     width: 100%;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 60px;
+    outline: none;
+}
+.calculator-body{
+    border-top: 2px solid black;
+    margin-right: -2px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.calc-btn{
+    font-size: larger;
     font-weight: bold;
-    font-size: xx-large;
+    border: none;
+    height: 60px;
+    width: 70px;
+    margin: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+    outline: none;
 }
-.operator{
-    background-color:orangered;
+.calc-btn:active{
+    background-color: rgb(6, 247, 239);
 }
-.number{
-    background-color: peru;
+.clear-btn{
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    width: 70px;
+    margin: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+    outline: none;
+}
+.clear-btn:active{
+    background-color: red;
+}
+.delete-btn{
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    width: 70px;
+    margin: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+    outline: none;
+}
+.delete-btn:active{
+    background-color: rgb(251, 105, 8);
+}
+.equal-btn{
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    width: 155px;
+    margin: 5px;
+    outline: none;
+    box-shadow: 1px 1px 1px 2px gray;
+}
+.equal-btn:active{
+    background-color: rgb(46, 255, 5);
 }
