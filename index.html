@@ -7,44 +7,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <h1>Calculator</h1>
-  </div>
-  <div class="main">
-    <form class="calculatorForm" name="calculatorForm">
-      <div class="screen">
-        <input placeholder="Calculate your number" type="text" name="display" desabled>
-      </div>
-      <div class="btn">
-        <input style="background-color: blue;" type="button" name="clear" value="c" onclick="clearNumber();">
-        <input style="background-color: aqua;" type="button" name="delete" value="<" onclick="deleteNumber();">
-        <input class="operator" type="button" name="division" value="/" onclick="valueButton(this);">
-      </div>
-      <div class="btn">
-        <input class="number" type="button" name="number1" value="1" onclick="valueButton(this);">
-        <input class="number" type="button" name="number2" value="2" onclick="valueButton(this);">
-        <input class="number" type="button" name="number3" value="3" onclick="valueButton(this);">
-        <input class="operator" type="button" name="plus" value="+" onclick="valueButton(this);">
-      </div>
-      <div class="btn">
-        <input class="number" type="button" name="number4" value="4" onclick="valueButton(this);">
-        <input class="number" type="button" name="number5" value="5" onclick="valueButton(this);">
-        <input class="number" type="button" name="number6" value="6" onclick="valueButton(this);">
-        <input class="operator" type="button" name="minus" value="-" onclick="valueButton(this);">
-      </div>
-      <div class="btn">
-        <input class="number" type="button" name="number7" value="7" onclick="valueButton(this);">
-        <input class="number" type="button" name="number8" value="8" onclick="valueButton(this);">
-        <input class="number" type="button" name="number9" value="9" onclick="valueButton(this);">
-        <input class="operator" type="button" name="integration" value="*" onclick="valueButton(this);">
-      </div>
-      <div class="btn">
-        <input class="number" type="button" name="number00" value="00" onclick="valueButton(this);">
-        <input class="number" type="button" name="number0" value="0" onclick="valueButton(this);">
-        <input style="background-color: chartreuse;" type="button" name="equal" value="=" onclick="calculateNumbers();">
-      </div>
-    </form>
-  </div>
+  <h1 class="title">Calculator</h1>
+    <div class="main">
+      <form class="calculator-sec" name="calculatorForm">
+        <div class="calculator-display">
+          <input type="text" name="display" readonly>
+        </div>
+        <div class="calculator-body">
+          <div class="row">
+            <input class="clear-btn" type="button" name="clear" value="AC" onclick="clearNumber();">
+            <input class="number calc-btn" type="button" name="dot" value="." onclick="valueButton(this);">
+            <input class="delete-btn" type="button" name="delete" value="C" onclick="deleteNumber();">
+            <input class="operator calc-btn" type="button" name="division" value="/" onclick="valueButton(this);">
+          </div>
+          <div class="row">
+            <input class="number calc-btn" type="button" name="number1" value="1" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number2" value="2" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number3" value="3" onclick="valueButton(this);">
+            <input class="operator calc-btn" type="button" name="plus" value="+" onclick="valueButton(this);">
+          </div>
+          <div class="row">
+            <input class="number calc-btn" type="button" name="number4" value="4" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number5" value="5" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number6" value="6" onclick="valueButton(this);">
+            <input class="operator calc-btn" type="button" name="minus" value="-" onclick="valueButton(this);">
+          </div>
+          <div class="row">
+            <input class="number calc-btn" type="button" name="number7" value="7" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number8" value="8" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number9" value="9" onclick="valueButton(this);">
+            <input class="operator calc-btn" type="button" name="integration" value="*" onclick="valueButton(this);">
+          </div>
+          <div class="row">
+            <input class="number calc-btn" type="button" name="number00" value="00" onclick="valueButton(this);">
+            <input class="number calc-btn" type="button" name="number0" value="0" onclick="valueButton(this);">
+            <input class="equal-btn" type="button" name="equal" value="=" onclick="calculateNumbers();">
+          </div>
+        </div>
+      </form>
+    </div>
+
+
   <script>
     function valueButton(e){
       calculatorForm.display.value += e.value;
